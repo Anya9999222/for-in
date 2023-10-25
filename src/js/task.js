@@ -10,8 +10,8 @@ export default function orderByProps(object, order) {
   for (const prop in object) {
     if (!order.includes(prop)) {
       arr2.push({ key: prop, value: object[prop] });
-    };
-  };
+    }
+  }
 
   arr2.sort((a, b) => {
     if (a.key > b.key) {
@@ -24,4 +24,4 @@ export default function orderByProps(object, order) {
 
   const merged = [...arr1, ...arr2];
   return merged;
-};
+}
